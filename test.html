@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Adidas Home Page</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: "Roboto", sans-serif;
+                background: #ffffff;
+            }
+            .header {
+                position: fixed;
+                width: 100%;
+                height: 80px;
+                background: #000000;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 30px;
+                box-sizing: border-box;
+            }
+            .header img {
+                width: 150px;
+            }
+            .header nav a {
+                color: #ffffff;
+                font-size: 16px;
+                margin: 0 10px;
+                text-decoration: none;
+            }
+            .header nav a:hover {
+                color: #00a3e0;
+            }
+            .header .icons img {
+                width: 24px;
+                margin-left: 15px;
+            }
+            .banner {
+                width: 100%;
+                height: 600px;
+                background: url("https://via.placeholder.com/1440x600?text=Adidas+Banner")
+                    center/cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: #ffffff;
+            }
+            .banner h1 {
+                font-size: 40px;
+                font-weight: bold;
+                margin: 0;
+            }
+            .banner p {
+                font-size: 20px;
+                margin: 10px 0;
+            }
+            .banner button {
+                padding: 15px 30px;
+                background: #00a3e0;
+                color: #ffffff;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .products {
+                width: 1440px;
+                margin: 30px auto;
+                text-align: center;
+            }
+            .products h2 {
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            .product-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 300px);
+                gap: 20px;
+                justify-content: center;
+            }
+            .product-card {
+                width: 300px;
+                background: #ffffff;
+                border: 1px solid #000000;
+                border-radius: 5px;
+                padding: 10px;
+                text-align: center;
+            }
+            .product-card img {
+                width: 280px;
+                height: 280px;
+                border-radius: 5px;
+            }
+            .product-card h3 {
+                font-size: 16px;
+                margin: 10px 0;
+            }
+            .product-card p {
+                font-size: 16px;
+                font-weight: bold;
+                margin: 5px 0;
+            }
+            .product-card button {
+                padding: 10px 20px;
+                background: #ffffff;
+                border: 1px solid #000000;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .footer {
+                width: 100%;
+                height: 200px;
+                background: #000000;
+                color: #ffffff;
+                display: flex;
+                justify-content: space-between;
+                padding: 30px;
+                box-sizing: border-box;
+            }
+            .footer div {
+                width: 33%;
+                text-align: center;
+            }
+            .footer img {
+                width: 24px;
+                margin: 0 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <img
+                src="https://via.placeholder.com/150x50?text=Adidas+Logo"
+                alt="Adidas Logo"
+            />
+            <nav>
+                <a href="#">Trang chủ</a>
+                <a href="#">Sản phẩm</a>
+                <a href="#">Giỏ hàng</a>
+                <a href="#">Tài khoản</a>
+            </nav>
+            <div class="icons">
+                <img
+                    src="https://via.placeholder.com/24x24?text=Search"
+                    alt="Search"
+                />
+                <img
+                    src="https://via.placeholder.com/24x24?text=Cart"
+                    alt="Cart"
+                />
+            </div>
+        </div>
+        <div class="banner">
+            <h1>Khám phá bộ sưu tập mới</h1>
+            <p>Hiệu suất đỉnh cao, phong cách dẫn đầu</p>
+            <button>Mua ngay</button>
+        </div>
+        <div class="products">
+            <h2>Sản phẩm nổi bật</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img
+                        src="https://via.placeholder.com/280x280?text=Ultraboost"
+                        alt="Product"
+                    />
+                    <h3>Ultraboost 22</h3>
+                    <p>4.500.000 VNĐ</p>
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+                <!-- Repeat for 3 more products -->
+                <div class="product-card">
+                    <img
+                        src="https://via.placeholder.com/280x280?text=Product+2"
+                        alt="Product"
+                    />
+                    <h3>NMD R1</h3>
+                    <p>3.800.000 VNĐ</p>
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-card">
+                    <img
+                        src="https://via.placeholder.com/280x280?text=Product+3"
+                        alt="Product"
+                    />
+                    <h3>Stan Smith</h3>
+                    <p>2.500.000 VNĐ</p>
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-card">
+                    <img
+                        src="https://via.placeholder.com/280x280?text=Product+4"
+                        alt="Product"
+                    />
+                    <h3>Superstar</h3>
+                    <p>2.800.000 VNĐ</p>
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <h4>Liên hệ</h4>
+                <p>support@adidas.com<br />0123-456-789</p>
+            </div>
+            <div>
+                <h4>Chính sách</h4>
+                <p>Vận chuyển<br />Đổi trả</p>
+            </div>
+            <div>
+                <h4>Kết nối</h4>
+                <img
+                    src="https://via.placeholder.com/24x24?text=FB"
+                    alt="Facebook"
+                />
+                <img
+                    src="https://via.placeholder.com/24x24?text=IG"
+                    alt="Instagram"
+                />
+                <img
+                    src="https://via.placeholder.com/24x24?text=TW"
+                    alt="Twitter"
+                />
+            </div>
+        </div>
+    </body>
+</html>
